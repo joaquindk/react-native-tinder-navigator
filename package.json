@@ -1,0 +1,32 @@
+{
+  "name": "react-native-tinder-navigator",
+  "version": "1.0.0",
+  "description": "A tinder style navigator that allows you to navigate between three adjacen screens with smooth header transitions.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joaquindk/react-native-tinder-navigator.git"
+  },
+  "keywords": [
+    "React",
+    "Native",
+    "Tinder",
+    "Navigator",
+    "Javascript"
+  ],
+  "author": "Joaquín Guillén Melo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joaquindk/react-native-tinder-navigator/issues"
+  },
+  "homepage": "https://github.com/joaquindk/react-native-tinder-navigator#readme",
+  "dependencies": {
+    "react-native": "^0.49.3"
+  },
+  "peerDependencies": {
+    "react-native": "^0.49.3"
+  }
+}
