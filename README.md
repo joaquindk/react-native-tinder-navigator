@@ -1,5 +1,5 @@
 # react-native-tinder-navigator
-![demo](https://github.com/joaquindk/react-native-tinder-navigator/blob/master/demo.gif)
+![demo](https://github.com/joaquindk/react-native-tinder-navigator/blob/master/navigatorDemo.gif)
 
 ## Synopsis
 
@@ -76,7 +76,7 @@ type Params = {
 ```
 ## Running the example project
 
-* `git clone https://github.com/dwicao/react-native-tinder-navigator.git`
+* `git clone https://github.com/joaquindk/react-native-tinder-navigator.git`
 * `cd example`
 * `npm install`
 * `react-native run-ios`
