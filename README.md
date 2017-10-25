@@ -13,7 +13,7 @@ Setting up a navigator is as simple as this...
 
 ```jsx
 import React, { Component } from "react";
-import { Animated, View } from "react-native";
+import { View } from "react-native";
 import { createTinderNavigator } from 'react-native-tinder-navigator';
 import HeaderIcon from './src/HeaderIcon';
 

@@ -1,57 +1,24 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- * @flow
- */
+import React, { Component } from "react";
+import { View } from "react-native";
+import { createTinderNavigator } from 'react-native-tinder-navigator';
+import HeaderIcon from './src/HeaderIcon';
 
-import React, { Component } from 'react';
-import {
-  Platform,
-  StyleSheet,
-  Text,
-  View
-} from 'react-native';
+const ColorScreen = ({ backgroundColor }) => (
+  <View style={{ flex: 1, justifyContent: 'center', flexDirection: 'column', alignItems: 'center' }}>
+    <View style={{ width: 300, height: 500, backgroundColor }} />
+  </View>
+);
 
-const instructions = Platform.select({
-  ios: 'Press Cmd+R to reload,\n' +
-    'Cmd+D or shake for dev menu',
-  android: 'Double tap R on your keyboard to reload,\n' +
-    'Shake or press menu button for dev menu',
-});
-
-export default class App extends Component<{}> {
-  render() {
-    return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to React Native!
-        </Text>
-        <Text style={styles.instructions}>
-          To get started, edit App.js
-        </Text>
-        <Text style={styles.instructions}>
-          {instructions}
-        </Text>
-      </View>
-    );
+const MainNavigator = createTinderNavigator({
+  leftScreen: { component: () => <ColorScreen backgroundColor="red" />, icon: (props: any) => <HeaderIcon type="flag" {...props} /> },
+  centerScreen: { component: () => <ColorScreen backgroundColor="yellow" />, icon: (props: any) => <HeaderIcon type="bed" {...props} /> },
+  rightScreen: { component: () => <ColorScreen backgroundColor="green" />, icon: (props: any) => <HeaderIcon type="beer" {...props} /> },
+  inactiveSize: 20,
+  headerStyle: {
+    backgroundColor: "white",
   }
-}
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
 });
+
+const ExampleApp = () => <MainNavigator />;
+
+export default ExampleApp;
