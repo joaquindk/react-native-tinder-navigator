@@ -18,10 +18,15 @@ type Screen = {
 };
 
 type Params = {
+  /** Component used for the left screen. */
   leftScreen: Screen,
+  /** Component used for the center screen. */
   centerScreen: Screen,
+  /** Component used for the right screen. */
   rightScreen: Screen,
+  /** Size of the icons when they are rendered on the left or right side, as inactive components. */
   inactiveSize: number,
+  /** Styles passed down to the header. */
   headerStyle: Object,
 };
 

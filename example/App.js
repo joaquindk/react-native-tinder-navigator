@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { View } from "react-native";
-import { createTinderNavigator } from 'react-native-tinder-navigator';
+import createTinderNavigator from 'react-native-tinder-navigator';
 import HeaderIcon from './src/HeaderIcon';
 
 const ColorScreen = ({ backgroundColor }) => (

@@ -1,6 +1,6 @@
 {
   "name": "react-native-tinder-navigator",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A tinder style navigator that allows you to navigate between three adjacent screens with smooth header transitions.",
   "main": "dist/index.js",
   "scripts": {
