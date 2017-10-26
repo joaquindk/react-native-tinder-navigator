@@ -43,7 +43,7 @@ An example of the HeaderIcon used in the Demo can be found in the examples in th
 
 ## Motivation
 
-The component was implemented due to the lack of this type of transition in other libraries such as react-navigation. At the moment in which this was developed, react-navigation did not provide screen transitions from left to right, and the header transitions were difficult to customise. We have thereafter integrated this project into others that are using react-navigation with excellen results, given that this navigator behaves as any other screen in the app.
+The component was implemented due to the lack of this type of transition in other libraries such as react-navigation. At the moment in which this was developed, react-navigation did not provide screen transitions from left to right, and the header transitions were difficult to customise. We have thereafter integrated this project into others that are using react-navigation with excellent results, given that this navigator behaves as any other screen in the app.
 
 ## Installation
 
